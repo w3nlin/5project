@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .navbar-brand{
+            background-image: url("logo1.png");
+            background-size: cover;
+            width: 50px;
+        }
+        .side-bar .list-group-item{
+            border:none;
+            border-radius:5px;
+            margin-bottom:5px;
+        }
+        .side-bar .active{
+            background: red;
+        }
+        .news-list-item img{
+            display: block;
+            max-width: 100%;
+            border-radius:3px;
+        }
+        .news-list-item .title{
+            font-size: 25px;
+            font-weight:bold;
+            margin-bottom:5px;
+            line-height: 2;
+        }
+        .news-list-item:first-child{
+            padding-top:0px;
+        }
+        .news-list-item{
+            padding-top:10px;
+            padding-bottom:10px;
+            border-bottom: 1px solid grey;
+        }
+        .news-list-item .info{
+            color:#888;
+
+        }
+        .avatar span{
+            display: inline-block;
+            margin-right:5px;
+        }
+        .avatar img{
+            display: inline-block;
+            width: 15px;
+            height:15px;
+        }
+        .side-bar-card{
+            margin-top:15px;
+            background: grey;
+            border-radius: 5px;
+        }
+        .side-bar-card .card-title{
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .side-bar-card .card-body .list .item{
+            padding:10px 15px;
+        }
+        .side-bar-card .card-body .list .item:hover{
+            background: rgba(0,0,0,0.2);
+            border-radius: 5px;
+
+        }
+        .card-body .desc{
+            padding-top: 5px;
+            color: rgba(0,0,0,.4);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container" style="border:1px solid black">
+        <div class="navbar-header" style="border:1px solid grey">
+            <a href="#" class="navbar-brand" style="border:1px solid pink"></a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#">首页</a></li>  <!--li里面必须要有a标签，不然样式无法实现-->
+            <li><a href="#">国内</a></li>
+            <li><a href="#">国际</a></li>
+            <li><a href="#">社会</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <h1 class="news-title">多年前的景观</h1>
+            <div class="news-status">25k阅读 35分钟前发布
+                <div class="label label-default">情感</div>
+                <div class="label label-default">教育</div>
+            </div>
+            <div class="news-content">
+                Youth is not a time of life; it is a state of mind; it is not a matter of rosy cheeks, red lips and supple knees; it is a matter of the will, a quality of the imagination, a vigor of the emotions; it is the freshness of the deep springs of life.
+                <img src="bac1.jpg" width="500px">
+
+                Youth means a temperamental predominance of courage over timidity, of the appetite for adventure over the love of ease. This often exists in a man of 60 more than a boy of 20. Nobody grows old merely by a number of years. We grow old by deserting our ideals.
+
+                Years may wrinkle the skin, but to give up enthusiasm wrinkles the soul. Worry, fear, self-distrust bows the heart and turns the spirit back to dust.
+
+                Whether 60 or 16, there is in every human being’s heart the lure of wonders, the unfailing appetite for what’s next and the joy of the game of living. In the center of your heart and my heart, there is a wireless station; so long as it receives messages of beauty, hope, courage and power from man and from the infinite, so long as you are young.
+
+                When your aerials are down, and your spirit is covered with snows of cynicism and the ice of pessimism, then you’ve grown old, even at 20; but as long as your aerials are up, to catch waves of optimism, there’s hope you may die young at 80.
+            </div>
+        </div>
+        <div class="col-xs-4"></div>
+    </div>
+</div>
+</body>
+</html>
