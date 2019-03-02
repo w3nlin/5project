@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        
+        .navbar-brand{
+            background-image:url("logo1.png") ;
+            background-size: cover;
+            width:50px;
+
+        }
+        .side-bar .list-group-item{
+            border-radius: 5px;
+            margin: 2px;
+        }
+        .body-center-news-header{
+            font-size:40px;
+            padding:10px 0 ;
+            display: block;
+        }
+        .body-center-news-info{
+            color: grey;
+        }
+        .news-item{
+            padding: 10px 0;
+            border-bottom:1px solid black;
+        }
+
+        #c1:checked ~.hidden-xs{
+            display: block!important
+        }
+        #l1{
+            position: absolute;
+            right:0px;
+            top:0px;
+            user-select: none;;
+            font-size: 35px;
+
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="news-navbar" class="navbar navbar-default">
+    <div class="container" ><!--style="border:1px solid black"-->
+        <div class="navbar-header" > <!--style="border:1px solid red"-->
+            <a class="navbar-brand" ></a> <!--style="border:1px solid pink"-->
+        </div>
+        <label id="l1" class="visible-xs-inline-block"  for="c1">menu</label>
+        <input class="hidden" type="checkbox" id="c1">
+
+            <ul  class="nav navbar-nav hidden-xs">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">国内</a></li>
+                <li><a href="#">国际</a></li>
+                <li><a href="#">社会</a></li>
+            </ul>
+            <ul  class="nav navbar-nav navbar-right hidden-xs">
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+
+
+    </div>
+</div>
+<div id="news-body" class="container" > <!--style="border:1px solid black"-->
+    <div class="row">
+        <div id="body-left" class="col-xs-2">
+            <div class="list-group side-bar">
+                <a href="#" class="list-group-item active">a</a>
+                <a href="#" class="list-group-item">b</a>
+                <a href="#" class="list-group-item">c</a>
+                <a href="#" class="list-group-item">d</a>
+                <a href="#" class="list-group-item">e</a>
+            </div>
+        </div>
+        <div id="body-center" class="col-xs-7 clearfix" > <!--style="border:1px solid blue"-->
+            <div class="news-item clearfix" >
+                <div class="col-xs-5">
+                <img src="bac1.jpg" style="max-width: 100%">
+            </div>
+                <div class="col-xs-7">
+                    <a class="body-center-news-header" href="#">现在的景观</a>
+                    <div class="body-center-news-info">
+                        <span><img src="logo2.png" style="max-width: 5%">王华华</span>
+                        <span>25k浏览量 7分钟前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-item clearfix">
+                <div class="col-xs-5">
+                    <img src="bac1.jpg" style="max-width: 100%">
+                </div>
+                <div class="col-xs-7">
+                    <a class="body-center-news-header" href="#">现在的景观</a>
+                    <div class="body-center-news-info">
+                        <span><img src="logo2.png" style="max-width: 5%">王华华</span>
+                        <span>25k浏览量 7分钟前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="news-item clearfix">
+                <div class="col-xs-5">
+                    <img src="bac1.jpg" style="max-width: 100%">
+                </div>
+                <div class="col-xs-7">
+                    <a class="body-center-news-header" href="#">现在的景观</a>
+                    <div class="body-center-news-info">
+                        <span><img src="logo2.png" style="max-width: 5%">王华华</span>
+                        <span>25k浏览量 7分钟前</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="body-right" class="col-xs-3" >
+            <input type="search" class="form-control" style="margin: 5px 0">
+            <div class="side-card clearfix" style="background-color: grey;margin:10px 0;border-radius:5px;">
+                <div class="col-xs-4">
+                    <img src="https://dummyimage.com/600x400/444/fff" style="max-width: 100%">
+                </div>
+                <div class="col-xs-8">
+                    <div>有害信息举报专区</div>
+                    <div>举报电话：15286</div>
+                </div>
+            </div>
+            <div class="side-card-2" style="background-color: grey;border-radius:5px">
+                <div>24小时热闻</div>
+                <div class="side-card-2-item" style="margin: 10px 0" >
+                    <div>my name is tom</div>
+                    <div style="color:rgba(0,0,0,.4);font-size: 10px;">15k阅读 1k评论</div>
+                </div>
+                <div class="side-card-2-item" style="margin: 10px 0" >
+                    <div>my name is tom</div>
+                    <div style="color:rgba(0,0,0,.4);font-size: 10px;">15k阅读 1k评论</div>
+                </div>
+                <div class="side-card-2-item" style="margin: 10px 0" >
+                    <div>my name is tom</div>
+                    <div style="color:rgba(0,0,0,.4);font-size: 10px;">15k阅读 1k评论</div>
+                </div>
+                <div class="side-card-2-item" style="margin: 10px 0" >
+                    <div>my name is tom</div>
+                    <div style="color:rgba(0,0,0,.4);font-size: 10px;">15k阅读 1k评论</div>
+                </div>
+                <div class="side-card-2-item" style="margin: 10px 0" >
+                    <div>my name is tom</div>
+                    <div style="color:rgba(0,0,0,.4);font-size: 10px;">15k阅读 1k评论</div>
+                </div>
+                <div class="side-card-2-item" style="margin: 10px 0" >
+                    <div>my name is tom</div>
+                    <div style="color:rgba(0,0,0,.4);font-size: 10px;">15k阅读 1k评论</div>
+                </div>
+                <div class="side-card-2-item" style="margin: 10px 0" >
+                    <div>my name is tom</div>
+                    <div style="color:rgba(0,0,0,.4);font-size: 10px;">15k阅读 1k评论</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
